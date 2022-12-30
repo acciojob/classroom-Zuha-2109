@@ -47,5 +47,6 @@ public class StudentService {
     //9. delete all teacher and student
     public void deleteAllTeachersService(){
         studentRepository.deleteAllTeachersFromDb();
+
     }
 }
