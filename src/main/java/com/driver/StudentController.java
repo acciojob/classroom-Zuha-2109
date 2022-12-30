@@ -67,8 +67,8 @@ public class StudentController {
         return new ResponseEntity<>(students, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("/delete-teacher-by-name")
-    public ResponseEntity<String> deleteTeacherByName(@RequestParam String teacher){
+    @DeleteMapping("/delete-teacher-by-name/{teacher}")
+    public ResponseEntity<String> deleteTeacherByName(@RequestParam("teacher") String teacher){
         studentService.deleteTeacherByNameService(teacher);
 
         return new ResponseEntity<>(teacher + " removed successfully", HttpStatus.CREATED);
