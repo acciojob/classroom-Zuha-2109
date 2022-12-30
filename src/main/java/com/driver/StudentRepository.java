@@ -75,7 +75,7 @@ public class StudentRepository {
             // deleting all the students from studentMap by using student
             for(String student: students){
                 if(studentMap.containsKey(student)){
-//                    studentMap.remove(student);
+                    studentMap.remove(student);
                 }
             }
             //deleting student and teacher pair
